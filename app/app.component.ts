@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
 
-    selector: 'pizzaconection',
+    selector: 'pizzaconnection',
     templateUrl: 'app/app.html',
     styleUrls: []
     
