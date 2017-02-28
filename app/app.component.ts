@@ -9,5 +9,11 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
+
+    private text: string = 'Hallo';
+    private showInput: boolean = true;
     
+    toggleInput() {
+        this.showInput = !this.showInput;
+    }    
 }

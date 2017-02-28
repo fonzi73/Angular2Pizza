@@ -11,7 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.text = 'Hallo';
+        this.showInput = true;
     }
+    AppComponent.prototype.toggleInput = function () {
+        this.showInput = !this.showInput;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pizzaconnection',
