@@ -7,6 +7,7 @@ import {InputTextModule, ButtonModule, MenubarModule} from 'primeng/primeng';
 import {routing} from './app.routes';
 import {HomeComponent} from './home/ts/components/home.component';
 import {PizzaListComponent} from './pizza/ts/components/pizzalist.component';
+import {PizzaListService} from './pizza/ts/services/pizzalist.service';
 
 @NgModule({
 
@@ -16,13 +17,15 @@ import {PizzaListComponent} from './pizza/ts/components/pizzalist.component';
         ButtonModule,
         FormsModule,
         routing,
-        MenubarModule],
+        MenubarModule,
+        HttpModule],
     declarations: [
         AppComponent,
         HomeComponent,
         PizzaListComponent
     ],
-    bootstrap: [AppComponent]
+    bootstrap: [AppComponent],
+    providers: [PizzaListService]
 })
 
 export class AppModule {}
