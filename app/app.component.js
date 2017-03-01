@@ -21,7 +21,7 @@ var AppComponent = (function () {
             },
             {
                 label: 'Speisekarte',
-                icon: 'fa fa-cutlery',
+                icon: 'fa-cutlery',
                 routerLink: ['pizzalist']
             }
         ];

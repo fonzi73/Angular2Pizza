@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
             },
             {
                 label: 'Speisekarte',
-                icon: 'fa fa-cutlery',
+                icon: 'fa-cutlery',
                 routerLink: ['pizzalist']
             }
         ]
