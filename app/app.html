@@ -11,32 +11,13 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div><h1>Version 0.1-beta</h1>
-            <div>Vielen dank für Ihren Besuch!<br><br>
-                Leider gibt es noch keine Pizza.
-            </div>
-            <div style="height: 50px"></div>
-            <template [ngIf]="showInput">
-                <div>
-                    <input id="in" 
-                           type="text"
-                           size="30" 
-                           InputText
-                           [(ngModel)]="text" />{{text}}
-                </div>
-            </template>
-            <div style="height: 20px"></div>
-            <div>
-                <button type="button"
-                        (click)="toggleInput()"
-                        pButton
-                        label="Toggle">
-                </button>
-                <div style="height: 50px"></div>
-                <div>
-                    <router-outlet></router-outlet>
-                </div>
-            </div>
+        <div class="height350"></div>
+        <div class="container-fixed">
+            <p-menubar [model]="items"></p-menubar>
         </div>
-    </body>
+        <div> 
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</body>
 </html>
