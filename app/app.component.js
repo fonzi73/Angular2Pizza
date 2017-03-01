@@ -11,17 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
-        this.text = 'Hallo';
-        this.showInput = true;
     }
-    AppComponent.prototype.toggleInput = function () {
-        this.showInput = !this.showInput;
+    AppComponent.prototype.ngOnInit = function () {
+        this.items = [
+            {
+                label: 'Home',
+                icon: '',
+                routerLink: ['']
+            },
+            {
+                label: 'Speisekarte',
+                icon: 'fa fa-cutlery',
+                routerLink: ['pizzalist']
+            }
+        ];
     };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'pizzaconnection',
             templateUrl: 'app/app.html',
-            styleUrls: []
+            styleUrls: ['app/css/styles.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

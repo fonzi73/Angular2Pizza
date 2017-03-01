@@ -14,17 +14,25 @@ var app_component_1 = require('./app.component');
 var forms_1 = require('@angular/forms');
 var primeng_1 = require('primeng/primeng');
 var app_routes_1 = require('./app.routes');
+var home_component_1 = require('./home/ts/components/home.component');
+var pizzalist_component_1 = require('./pizza/ts/components/pizzalist.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule,
+            imports: [
+                platform_browser_1.BrowserModule,
                 primeng_1.InputTextModule,
                 primeng_1.ButtonModule,
                 forms_1.FormsModule,
-                app_routes_1.routing],
-            declarations: [app_component_1.AppComponent],
+                app_routes_1.routing,
+                primeng_1.MenubarModule],
+            declarations: [
+                app_component_1.AppComponent,
+                home_component_1.HomeComponent,
+                pizzalist_component_1.PizzaListComponent
+            ],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
