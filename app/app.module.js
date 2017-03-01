@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
 var forms_1 = require('@angular/forms');
 var primeng_1 = require('primeng/primeng');
+var app_routes_1 = require('./app.routes');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -21,7 +22,8 @@ var AppModule = (function () {
             imports: [platform_browser_1.BrowserModule,
                 primeng_1.InputTextModule,
                 primeng_1.ButtonModule,
-                forms_1.FormsModule],
+                forms_1.FormsModule,
+                app_routes_1.routing],
             declarations: [app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
