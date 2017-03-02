@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router';
 import {PizzaListService} from '../services/pizzalist.service';
 import {Pizza} from '../models/pizza.model';
+
 
 @Component({
 
@@ -15,7 +17,8 @@ export class PizzaListComponent {
     private pizzaList: Array<Pizza>;
 
     constructor(
-        private _pizzaService: PizzaListService
+        private _pizzaService: PizzaListService,
+        private _router: Router
     ) {
         this._pizzaService.getPizzaList().subscribe(
             res => this.pizzaList = res
@@ -23,6 +26,9 @@ export class PizzaListComponent {
     }
     getPizzaList() {
         return this.pizzaList;
+    }
+    showDetails(pizza: Pizza) {
+        this._router.navigate(['pizzadetail', pizza.id]);
     }
 
 }

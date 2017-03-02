@@ -30,7 +30,11 @@ var AppModule = (function () {
                 forms_1.FormsModule,
                 app_routes_1.routing,
                 primeng_1.MenubarModule,
-                http_1.HttpModule],
+                http_1.HttpModule,
+                http_1.JsonpModule,
+                primeng_1.DataGridModule,
+                primeng_1.PanelModule
+            ],
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
