@@ -5,7 +5,6 @@ import {AppComponent} from './app.component';
 import {FormsModule} from '@angular/forms';
 import {InputTextModule, ButtonModule, MenubarModule, DataGridModule, PanelModule} from 'primeng/primeng';
 import {routing} from './app.routes';
-import {HomeComponent} from './home/ts/components/home.component';
 import {PizzaListComponent} from './pizza/ts/components/pizzalist.component';
 import {PizzaListService} from './pizza/ts/services/pizzalist.service';
 import {PizzaDetailComponent} from './pizza/ts/components/pizzadetail.component';
@@ -27,7 +26,6 @@ import {PizzaDetailService} from './pizza/ts/services/pizzadetail.service';
         ],
     declarations: [
         AppComponent,
-        HomeComponent,
         PizzaListComponent,
         PizzaDetailComponent
     ],

@@ -3,7 +3,7 @@ var pizzalist_component_1 = require('../components/pizzalist.component');
 var pizzadetail_component_1 = require('../components/pizzadetail.component');
 exports.PizzaRoutes = [
     {
-        path: 'pizzalist',
+        path: '',
         component: pizzalist_component_1.PizzaListComponent
     },
     {

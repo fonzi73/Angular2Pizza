@@ -5,7 +5,7 @@ import {PizzaDetailComponent} from '../components/pizzadetail.component';
 
 export const PizzaRoutes: Routes = [
      {
-         path: 'pizzalist',
+         path: '',
          component: PizzaListComponent
      },
      {

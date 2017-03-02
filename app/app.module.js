@@ -15,7 +15,6 @@ var app_component_1 = require('./app.component');
 var forms_1 = require('@angular/forms');
 var primeng_1 = require('primeng/primeng');
 var app_routes_1 = require('./app.routes');
-var home_component_1 = require('./home/ts/components/home.component');
 var pizzalist_component_1 = require('./pizza/ts/components/pizzalist.component');
 var pizzalist_service_1 = require('./pizza/ts/services/pizzalist.service');
 var pizzadetail_component_1 = require('./pizza/ts/components/pizzadetail.component');
@@ -39,7 +38,6 @@ var AppModule = (function () {
             ],
             declarations: [
                 app_component_1.AppComponent,
-                home_component_1.HomeComponent,
                 pizzalist_component_1.PizzaListComponent,
                 pizzadetail_component_1.PizzaDetailComponent
             ],
