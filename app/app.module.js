@@ -18,6 +18,8 @@ var app_routes_1 = require('./app.routes');
 var home_component_1 = require('./home/ts/components/home.component');
 var pizzalist_component_1 = require('./pizza/ts/components/pizzalist.component');
 var pizzalist_service_1 = require('./pizza/ts/services/pizzalist.service');
+var pizzadetail_component_1 = require('./pizza/ts/components/pizzadetail.component');
+var pizzadetail_service_1 = require('./pizza/ts/services/pizzadetail.service');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,10 +40,14 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 home_component_1.HomeComponent,
-                pizzalist_component_1.PizzaListComponent
+                pizzalist_component_1.PizzaListComponent,
+                pizzadetail_component_1.PizzaDetailComponent
             ],
             bootstrap: [app_component_1.AppComponent],
-            providers: [pizzalist_service_1.PizzaListService]
+            providers: [
+                pizzalist_service_1.PizzaListService,
+                pizzadetail_service_1.PizzaDetailService
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

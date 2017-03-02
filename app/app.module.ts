@@ -8,6 +8,8 @@ import {routing} from './app.routes';
 import {HomeComponent} from './home/ts/components/home.component';
 import {PizzaListComponent} from './pizza/ts/components/pizzalist.component';
 import {PizzaListService} from './pizza/ts/services/pizzalist.service';
+import {PizzaDetailComponent} from './pizza/ts/components/pizzadetail.component';
+import {PizzaDetailService} from './pizza/ts/services/pizzadetail.service';
 
 @NgModule({
 
@@ -26,10 +28,14 @@ import {PizzaListService} from './pizza/ts/services/pizzalist.service';
     declarations: [
         AppComponent,
         HomeComponent,
-        PizzaListComponent
+        PizzaListComponent,
+        PizzaDetailComponent
     ],
     bootstrap: [AppComponent],
-    providers: [PizzaListService]
+    providers: [
+    PizzaListService,
+    PizzaDetailService
+    ]
 })
 
 export class AppModule {}
